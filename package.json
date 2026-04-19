@@ -25,6 +25,7 @@
     "@vercel/functions": "^1.5.2",
     "@vercel/kv": "^3.0.0",
     "ai": "^4.1.0",
+    "botid": "^1.5.11",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.5.2",

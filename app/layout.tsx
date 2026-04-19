@@ -2,8 +2,15 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
-import { KasadaClient } from "@/utils/kasada/kasada-client";
+import { BotIdClient } from "botid/client";
 import { Toaster } from "@/components/ui/sonner";
+
+const protectedRoutes = [
+  {
+    path: "/api/generate-images",
+    method: "POST",
+  },
+];
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,10 +35,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <head>
+        <BotIdClient protect={protectedRoutes} />
+      </head>
       <body className="font-sans antialiased">
         {children}
         <Analytics />
-        <KasadaClient />
         <Toaster />
       </body>
     </html>

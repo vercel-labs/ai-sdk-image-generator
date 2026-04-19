@@ -8,6 +8,7 @@ import { openai } from "@ai-sdk/openai";
 import { fireworks } from "@ai-sdk/fireworks";
 import { replicate } from "@ai-sdk/replicate";
 import { vertex } from "@ai-sdk/google-vertex/edge";
+import { checkBotId } from "botid/server";
 import { ProviderKey } from "@/lib/provider-config";
 import { GenerateImageRequest } from "@/lib/api-types";
 
@@ -57,6 +58,11 @@ const withTimeout = <T>(
 };
 
 export async function POST(req: NextRequest) {
+  const { isBot } = await checkBotId();
+  if (isBot) {
+    return NextResponse.json({ error: "Access denied" }, { status: 403 });
+  }
+
   const requestId = Math.random().toString(36).substring(7);
   const { prompt, provider, modelId } =
     (await req.json()) as GenerateImageRequest;
