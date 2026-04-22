@@ -1,0 +1,158 @@
+[
+    {
+      "id": "PROD-1001",
+      "productName": "Minimalist Oak Dining Table",
+      "productUrlSlug": "minimalist-oak-dining-table",
+      "shortDescription": "A sleek, 6-seater dining table made from solid white oak with a matte finish.",
+      "pricingDetails": {
+        "originalPrice": 1299.00,
+        "discountedPrice": 1099.00
+      },
+      "inventory": {
+        "availableQuantity": 15,
+        "lowStockWarningAt": 5
+      },
+      "productImages": [
+        "/oak Dining table.jpeg",
+        "/Abstract Canvas Art.jpeg"
+      ],
+      "model3d": " ",
+      "category": "Furniture > Tables",
+      "productStatus": "Active",
+      "markAsFeatured": true,
+      "vendor": "Nordic Woodworks",
+      "size": "180cm x 90cm",
+      "colors": ["Natural Oak", "Walnut Stain"],
+      "updatedAt": "2025-11-25T10:30:00Z",
+      "createdAt": "2025-01-15T08:00:00Z"
+    },
+    {
+      "id": "PROD-1002",
+      "productName": "Antique Persian Rug - Red",
+      "productUrlSlug": "antique-persian-rug-red",
+      "shortDescription": "Hand-knotted wool rug featuring traditional floral patterns in deep red and navy.",
+      "pricingDetails": {
+        "originalPrice": 850.00,
+        "discountedPrice": null
+      },
+      "inventory": {
+        "availableQuantity": 3,
+        "lowStockWarningAt": 2
+      },
+      "productImages": [
+        "Persian red rug.jpeg"
+      ],
+      "model3d": null,
+      "category": "Decor > Rugs",
+      "productStatus": "Active",
+      "markAsFeatured": true,
+      "vendor": "Heritage Weavers",
+      "size": "200cm x 300cm",
+      "colors": ["Red", "Navy", "Cream"],
+      "updatedAt": "2025-11-20T14:15:00Z",
+      "createdAt": "2025-02-10T09:30:00Z"
+    },
+    {
+      "id": "PROD-1003",
+      "productName": "Velvet Armchair",
+      "productUrlSlug": "velvet-armchair-green",
+      "shortDescription": "Plush emerald green velvet armchair with gold-plated metal legs.",
+      "pricingDetails": {
+        "originalPrice": 450.00,
+        "discountedPrice": 399.99
+      },
+      "inventory": {
+        "availableQuantity": 42,
+        "lowStockWarningAt": 10
+      },
+      "productImages": [
+        "/Velvet ARmchair.webp"
+      ],
+      "model3d": " ",
+      "category": "Furniture > Chairs",
+      "productStatus": "Active",
+      "markAsFeatured": false,
+      "vendor": "Luxe Interiors",
+      "size": "85cm x 90cm",
+      "colors": ["Emerald Green", "Royal Blue", "Blush Pink"],
+      "updatedAt": "2025-11-26T09:00:00Z",
+      "createdAt": "2025-03-05T11:20:00Z"
+    },
+    {
+      "id": "PROD-1004",
+      "productName": "Industrial Floor Lamp",
+      "productUrlSlug": "industrial-floor-lamp",
+      "shortDescription": "Adjustable metal floor lamp in matte black finish, perfect for reading nooks.",
+      "pricingDetails": {
+        "originalPrice": 120.00,
+        "discountedPrice": null
+      },
+      "inventory": {
+        "availableQuantity": 0,
+        "lowStockWarningAt": 5
+      },
+      "productImages": [
+        "/Velvet ARmchair.webp"
+      ],
+      "model3d": null,
+      "category": "Lighting > Floor Lamps",
+      "productStatus": "Out of Stock",
+      "markAsFeatured": false,
+      "vendor": "Bright Ideas",
+      "size": "150cm Height",
+      "colors": ["Matte Black", "Brushed Brass"],
+      "updatedAt": "2025-11-24T16:45:00Z",
+      "createdAt": "2025-04-12T13:00:00Z"
+    },
+    {
+      "id": "PROD-1005",
+      "productName": "Abstract Canvas Art",
+      "productUrlSlug": "abstract-canvas-art-ocean",
+      "shortDescription": "Large format canvas print featuring abstract ocean waves in blue and white.",
+      "pricingDetails": {
+        "originalPrice": 200.00,
+        "discountedPrice": 150.00
+      },
+      "inventory": {
+        "availableQuantity": 8,
+        "lowStockWarningAt": 3
+      },
+      "productImages": [
+        "/Abstract Canvas Art.jpeg"
+      ],
+      "model3d": null,
+      "category": "Decor > Wall Art",
+      "productStatus": "Active",
+      "markAsFeatured": false,
+      "vendor": "Artistry Collective",
+      "size": "100cm x 100cm",
+      "colors": ["Blue", "White", "Grey"],
+      "updatedAt": "2025-10-15T10:00:00Z",
+      "createdAt": "2025-05-20T08:45:00Z"
+    },
+    {
+      "id": "PROD-1009",
+      "productName": "Marble Coffee Table",
+      "productUrlSlug": "marble-coffee-table-round",
+      "shortDescription": "Round coffee table with genuine Carrara marble top and black metal base.",
+      "pricingDetails": {
+        "originalPrice": 350.00,
+        "discountedPrice": null
+      },
+      "inventory": {
+        "availableQuantity": 8,
+        "lowStockWarningAt": 5
+      },
+      "productImages": [
+       "/coffee table.jpeg"
+      ],
+      "model3d": " ",
+      "category": "Furniture > Tables",
+      "productStatus": "Active",
+      "markAsFeatured": true,
+      "vendor": "Stone & Steel",
+      "size": "80cm Diameter",
+      "colors": ["White Marble", "Black Marble"],
+      "updatedAt": "2025-11-05T12:00:00Z",
+      "createdAt": "2025-07-20T14:30:00Z"
+    } ]
