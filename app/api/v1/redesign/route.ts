@@ -6,24 +6,11 @@ import { performRoomRedesign, VALID_STYLES, Style, imageUrlToBase64 } from "@/li
 const CORS_HEADERS = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Methods": "POST, OPTIONS",
-  "Access-Control-Allow-Headers": "Content-Type, x-api-key, Authorization",
+  "Access-Control-Allow-Headers": "Content-Type",
 };
 
 export async function OPTIONS() {
   return new NextResponse(null, { status: 204, headers: CORS_HEADERS });
-}
-
-// ── Auth helper ───────────────────────────────────────────────────────────────
-
-function isAuthorized(req: NextRequest): boolean {
-  const apiKey = process.env.DOMA_API_KEY;
-  if (!apiKey) return true; // if no key configured, open access (dev mode)
-
-  const fromHeader =
-    req.headers.get("x-api-key") ??
-    req.headers.get("authorization")?.replace(/^Bearer\s+/i, "");
-
-  return fromHeader === apiKey;
 }
 
 // ── Route ─────────────────────────────────────────────────────────────────────
@@ -32,7 +19,6 @@ function isAuthorized(req: NextRequest): boolean {
  * POST /api/v1/redesign
  *
  * Headers:
- *   x-api-key: <your DOMA_API_KEY>
  *   Content-Type: application/json
  *
  * Body:
@@ -65,13 +51,6 @@ function isAuthorized(req: NextRequest): boolean {
  * }
  */
 export async function POST(req: NextRequest) {
-  if (!isAuthorized(req)) {
-    return NextResponse.json(
-      { success: false, error: "Unauthorized — provide a valid x-api-key header" },
-      { status: 401, headers: CORS_HEADERS },
-    );
-  }
-
   try {
     let { image, style, prompt } = await req.json();
 
